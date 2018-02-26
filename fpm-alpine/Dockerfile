@@ -1,10 +1,10 @@
-FROM wordpress:4.9.2-php7.2-fpm-alpine
+FROM wordpress:4.9.4-php7.2-fpm-alpine
 
 RUN apk add --no-cache --virtual .deps wget unzip \
  && mkdir /tmp/wp-plugins && cd /tmp/wp-plugins \
  && wget https://downloads.wordpress.org/plugin/simply-static.2.1.0.zip \
- && wget https://downloads.wordpress.org/plugin/amazon-web-services.1.0.4.zip \
- && wget https://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.1.2.1.zip \
+ && wget https://downloads.wordpress.org/plugin/amazon-web-services.1.0.5.zip \
+ && wget https://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.1.3.2.zip \
  && wget https://downloads.wordpress.org/plugin/ga-google-analytics.20171103.zip \
  && unzip './*.zip' -d /usr/src/wordpress/wp-content/plugins \
  && chown -R www-data:www-data /usr/src/wordpress/wp-content \
