@@ -1,4 +1,4 @@
-FROM wordpress:4.9.2-php7.2-apache
+FROM wordpress:4.9.4-php7.2-apache
 
 RUN deps="wget unzip" && apt-get update \
  && apt-get --no-install-recommends -y install $deps \
