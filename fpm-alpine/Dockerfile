@@ -1,4 +1,4 @@
-FROM wordpress:4.9.2-php7.2-fpm-alpine
+FROM wordpress:4.9.4-php7.2-fpm-alpine
 
 RUN apk add --no-cache --virtual .deps wget unzip \
  && mkdir /tmp/wp-plugins && cd /tmp/wp-plugins \
