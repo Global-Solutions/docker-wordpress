@@ -5,7 +5,7 @@ RUN apk add --no-cache --virtual .deps wget unzip \
  && wget https://downloads.wordpress.org/plugin/simply-static.2.1.0.zip \
  && wget https://downloads.wordpress.org/plugin/amazon-web-services.1.0.5.zip \
  && wget https://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.1.3.2.zip \
- && wget https://downloads.wordpress.org/plugin/ga-google-analytics.20171103.zip \
+ && wget https://downloads.wordpress.org/plugin/ga-google-analytics.20180303.zip \
  && unzip './*.zip' -d /usr/src/wordpress/wp-content/plugins \
  && chown -R www-data:www-data /usr/src/wordpress/wp-content \
  && cd \
